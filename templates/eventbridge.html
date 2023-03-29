@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="title" style="text-align:center;">{% block title %} Page for visualization workflow in aws event driven {%
+    endblock %}</h2>
+<br>
+<p style="text-align:center;">
+    <img src="{{url_for('static', filename='func-diagram.png')}}" width="1000" height="400" />
+</p>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h5 style="text-align:center;">Connecting to external API for get dummy users</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='connect_api.png')}}" alt="connect to api" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Uploading user data in .json file to s3 bucket</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='upload_to_s3.png')}}" alt="upload json to s3" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating s3 bucket and check if .json file exist after run app</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='s3_bucket.png')}}" alt="create s3 bucket" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating Amazon EventBridge for monitoring when user create new object</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='eventbridge.png')}}" alt="eventbridge" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating Simple Notification Service for send email when new object was
+                created</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='sns_and_sub.png')}}" alt="sns" class="center" width="1000"
+                    height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Email subscription</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='email.png')}}" alt="email sub" class="center" width="1000"
+                    height="200">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating Simple Queue Service and connect with SNS</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='sqs.png')}}" alt="sqs" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating Lambda and connect with SQS trigger</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='lambda_sqs.png')}}" alt="lambda connect sqs" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating Lambda function for read event and load json from s3</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='lambda_read_json.png')}}" alt="lambda read json" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Uploading Lambda function for create dataframe and save data in parquet file
+            </h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='lambda_write_parquet.png')}}" alt="lambda write parquet"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Write parquet file into s3 bucket</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='s3_all_files.png')}}" alt="s3 all files" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Creating function for read parquet file from s3</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='read_parquet.png')}}" alt="read parquet from s3" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">Printing data on console</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='result_parquet.png')}}" alt="result data from parquet"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}
