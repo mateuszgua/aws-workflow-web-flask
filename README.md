@@ -18,7 +18,7 @@
 
 ## Technologies Used
 - Python - version 3.10.6
-- Flask
+- Flask - version 2.2.3
 
 
 ## Features
