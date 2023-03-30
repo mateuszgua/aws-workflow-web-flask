@@ -12,6 +12,13 @@
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
     <div class="carousel-inner">
         <div class="carousel-item active">
+            <h5 style="text-align:center;">Creating s3 bucket with directories</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='pipeline/s3_bucket.png')}}" alt="create s3 bucket"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
             <h5 style="text-align:center;">Creating database</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/create_database.png')}}" alt="create database"
@@ -64,17 +71,17 @@
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">Creating Lambda and connect with SQS trigger</h5>
+            <h5 style="text-align:center;">Creating parquet files from jobs</h5>
             <p style="text-align:center;">
-                <img src="{{url_for('static', filename='pipeline/lambda_sqs.png')}}" alt="lambda connect sqs"
+                <img src="{{url_for('static', filename='pipeline/parquet_user_data.png')}}" alt="create parquet files"
                     class="center" width="1000" height="400">
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">Creating Lambda function for read event and load json from s3</h5>
+            <h5 style="text-align:center;">Running crawler for create tables from parquet files</h5>
             <p style="text-align:center;">
-                <img src="{{url_for('static', filename='pipeline/lambda_read_json.png')}}" alt="lambda read json"
-                    class="center" width="1000" height="400">
+                <img src="{{url_for('static', filename='pipeline/create_tables_parquets.png')}}"
+                    alt="create tables from parquet" class="center" width="1000" height="400">
             </p>
         </div>
         <div class="carousel-item">
