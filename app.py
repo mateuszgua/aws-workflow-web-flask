@@ -16,5 +16,10 @@ def eventbridge():
     return render_template("eventbridge.html")
 
 
+@app.route("/pipeline")
+def pipeline():
+    return render_template("pipeline.html")
+
+
 if __name__ == '__main__':
     app.run()

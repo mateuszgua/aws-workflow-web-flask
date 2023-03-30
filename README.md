@@ -23,13 +23,14 @@
 
 ## Features
 List the ready features here:
-- Create views for show first project in aws,
-
+- Create view for show data eventbridge with s3 bucket and lambda,
+- Create view for show data pipeline in glue and show results in athena.
 
 ## Screenshots
 Page with project workflow
-![Example screenshot](./static/pythonanywhere.png)
-
+![Example screenshot](./static/index.png)
+![Example screenshot](./static/eventbridge.png)
+![Example screenshot](./static/pipeline.png)
 ## Project Status
 Project is: in_progress
 
