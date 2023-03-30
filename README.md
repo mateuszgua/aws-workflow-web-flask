@@ -28,8 +28,9 @@ List the ready features here:
 
 ## Screenshots
 Page with project workflow
-![Example screenshot](./static/pythonanywhere.png)
-
+![Example screenshot](./static/index.png)
+![Example screenshot](./static/eventbridge.png)
+![Example screenshot](./static/pipeline.png)
 ## Project Status
 Project is: in_progress
 
