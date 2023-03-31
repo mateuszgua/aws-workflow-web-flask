@@ -21,5 +21,10 @@ def pipeline():
     return render_template("pipeline.html")
 
 
+@app.route("/dashboard")
+def dashboard():
+    return render_template("dashboard.html")
+
+
 if __name__ == '__main__':
     app.run()
