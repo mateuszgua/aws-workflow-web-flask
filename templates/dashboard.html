@@ -95,6 +95,23 @@
                     class="center" width="1000" height="600">
             </p>
         </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">13. Creating dashboard in pdf file</h5>
+            <p style="text-align:center;">
+                <a>
+                    <br><br><br>
+                    <img src="{{url_for('static', filename='dashboard/pdf_icon.png')}}" alt="pdf icon" class="center"
+                        width="100" height="100">
+                </a>
+                <a>
+                    <br><br>
+                    Sample dashboard for download in pdf format:
+                    <br><br>
+                    <a class="btn btn-warning btn-sm" href="{{ url_for('.download_file') }}" role="button">Download pdf
+                        file</a>
+                </a>
+            </p>
+        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
