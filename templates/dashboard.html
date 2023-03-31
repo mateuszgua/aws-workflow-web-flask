@@ -11,7 +11,7 @@
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <h5 style="text-align:center;">1. Creating s3 bucket with directories</h5>
+            <h5 style="text-align:center;">1. Creating S3 bucket with directories</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='dashboard/s3_bucket.png')}}" alt="create s3 bucket"
                     class="center" width="1000" height="400">
@@ -58,6 +58,41 @@
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='dashboard/table_parquet_database.png')}}"
                     alt="create table from parquet file" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">8. Creating view of results in Athena</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/athena_results.png')}}" alt="create athena"
+                    class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">9. Creating bar chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_age.png')}}" alt="avg salary by age"
+                    class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">10. Creating bar chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_state.png')}}"
+                    alt="avg salary by state" class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">11. Creating map chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_state_map.png')}}"
+                    alt="map avg salary by state" class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">12. Creating pie chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_color_pie.png')}}" alt="pie chart colors"
+                    class="center" width="1000" height="600">
             </p>
         </div>
     </div>
