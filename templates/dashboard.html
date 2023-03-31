@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="title" style="text-align:center;">{% block title %} Page for visualization workflow in serverless dashboard{%
+    endblock %}</h2>
+<br>
+<p style="text-align:center;">
+    <img src="{{url_for('static', filename='dashboard/func-diagram-dashboard.png')}}" width="1000" height="400" />
+</p>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h5 style="text-align:center;">1. Creating S3 bucket with directories</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/s3_bucket.png')}}" alt="create s3 bucket"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">2. Creating database</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/database.png')}}" alt="create database" class="center"
+                    width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">3. Manual creating table from csv file</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/create_table.png')}}" alt="create table"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">4. Creating job with custom code, transformation types and save file in
+                parquet type</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/job_create_parquet.png')}}" alt="create job"
+                    class="center" width="1000" height="800">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">5. Creating custom code in pyspark for get salary without sign '$'</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/sunstring.png')}}" alt="create custom code"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">6. Creating crawler for make table from parquet file</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/create_crawler.png')}}" alt="create crawler"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">7. Creating table in database from parquet file</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/table_parquet_database.png')}}"
+                    alt="create table from parquet file" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">8. Creating view of results in Athena</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/athena_results.png')}}" alt="create athena"
+                    class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">9. Creating bar chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_age.png')}}" alt="avg salary by age"
+                    class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">10. Creating bar chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_state.png')}}"
+                    alt="avg salary by state" class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">11. Creating map chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_salaryAvg_state_map.png')}}"
+                    alt="map avg salary by state" class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">12. Creating pie chart in QuickSight</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='dashboard/chart_color_pie.png')}}" alt="pie chart colors"
+                    class="center" width="1000" height="600">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">13. Creating dashboard in pdf file</h5>
+            <p style="text-align:center;">
+                <a>
+                    <br><br><br>
+                    <img src="{{url_for('static', filename='dashboard/pdf_icon.png')}}" alt="pdf icon" class="center"
+                        width="100" height="100">
+                </a>
+                <a>
+                    <br><br>
+                    Sample dashboard for download in pdf format:
+                    <br><br>
+                    <a class="btn btn-warning btn-sm" href="{{ url_for('.download_file') }}" role="button">Download pdf
+                        file</a>
+                </a>
+            </p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}
