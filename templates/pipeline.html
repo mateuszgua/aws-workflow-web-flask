@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<h2 class="title" style="text-align:center;">{% block title %} Page for visualization workflow in data pipeline with
-    glue services{%
+<h2 class="title" style="text-align:center;">{% block title %} Site presents steps and results of the Data Pipeline in
+    Glue Services{%
     endblock %}</h2>
 <br>
 <p style="text-align:center;">
@@ -26,7 +26,7 @@
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">3. Creating crawlers for csv file and parquet for next steps</h5>
+            <h5 style="text-align:center;">3. Creating crawlers</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/create_crawlers.png')}}" alt="create crawlers"
                     class="center" width="1000" height="400">
@@ -40,15 +40,16 @@
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">5. Creating job for count users job titles with sex data and save result i
-                parquet file</h5>
+            <h5 style="text-align:center;">5. Creating job to count users and job titles with sex data and saving result
+                in parquet file</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/job_count.png')}}" alt="jon count sex" class="center"
                     width="1000" height="800">
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">6. Creating job for select columns from table and save result i parquet file
+            <h5 style="text-align:center;">6. Creating job to selected columns from table and saving result in parquet
+                file
             </h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/job_user_data.png')}}" alt="job select columns"
@@ -56,15 +57,15 @@
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">7. Creating job for reaname column title and select columns from table, next
-                save result i parquet file</h5>
+            <h5 style="text-align:center;">7. Creating job to reaname column and select columns from source table,
+                saving result in parquet file</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/job_user_names.png')}}"
                     alt="job reaneme and select columns" class="center" width="1000" height="800">
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">8. Creating trigger for run jobs in schedule</h5>
+            <h5 style="text-align:center;">8. Creating trigger to run jobs in schedule</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/create_trigger.png')}}" alt="create trigger"
                     class="center" width="1000" height="300">
@@ -78,15 +79,15 @@
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">10. Running crawler for create tables from parquet files</h5>
+            <h5 style="text-align:center;">10. Running crawlers to create tables from parquet files</h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/create_tables_parquets.png')}}"
                     alt="create tables from parquet" class="center" width="1000" height="400">
             </p>
         </div>
         <div class="carousel-item">
-            <h5 style="text-align:center;">11. Creating athena service for show data in tables - table with count job
-                titles
+            <h5 style="text-align:center;">11. Creating athena service to show data in tables - table with count
+                job titles
             </h5>
             <p style="text-align:center;">
                 <img src="{{url_for('static', filename='pipeline/athena_count.png')}}" alt="athena job titles count"

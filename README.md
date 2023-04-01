@@ -1,5 +1,5 @@
 # AWS SERVICES WORKFLOW
-> This application showed images with projects on aws services. 
+> This application shows images with projects on aws services. 
 > Live demo [_here_](http://mateuszgua.pythonanywhere.com/).
 
 
@@ -23,9 +23,9 @@
 
 ## Features
 List the ready features here:
-- Create view for show data eventbridge with s3 bucket and lambda,
-- Create view for show data pipeline in glue and show results in athena,
-- Create view for show dashboard in athena and quicksight
+- Creating view to show data eventbridge with s3 bucket and lambda,
+- Createing view to show data pipeline in glue and show results in athena,
+- Creating view to show dashboard in athena and quicksight
 
 ## Screenshots
 Page with project workflow
