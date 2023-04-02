@@ -33,5 +33,10 @@ def download_file():
     return send_file(path, as_attachment=True)
 
 
+@app.route("/migrateSCT")
+def migrateSCT():
+    return render_template("migrateSCT.html")
+
+
 if __name__ == '__main__':
     app.run()
