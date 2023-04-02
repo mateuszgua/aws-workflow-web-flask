@@ -27,15 +27,15 @@ def dashboard():
     return render_template("dashboard.html")
 
 
-@app.route("/migrateSCT")
-def migrateSCT():
-    return render_template("migrateSCT.html")
-
-
 @app.route('/download')
 def download_file():
     path = './samples/sample_dashboard_devgua.pdf'
     return send_file(path, as_attachment=True)
+
+
+@app.route("/migrateSCT")
+def migrateSCT():
+    return render_template("migrateSCT.html")
 
 
 if __name__ == '__main__':
