@@ -38,5 +38,10 @@ def migrateSCT():
     return render_template("migrateSCT.html")
 
 
+@app.route("/migrateDMS")
+def migrateDMS():
+    return render_template("migrateDMS.html")
+
+
 if __name__ == '__main__':
     app.run()
