@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="title" style="text-align:center;">{% block title %} Site presents steps and results of the Database Migration
+    in Database Migration Service{% endblock %}</h2>
+<br>
+<p style="text-align:center;">
+    <img src="{{url_for('static', filename='migrateDMS/func-diagram-data-migration-dms.png')}}" width="1000"
+        height="400" />
+</p>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <h5 style="text-align:center;">1. Creating instances of Microsoft SQL Server and MySQL on RDS</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='migrateDMS/create_databases.png')}}"
+                    alt="create databases in RDS" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">2. Creating replication instances</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='migrateDMS/create_replication_instance.png')}}"
+                    alt="create replication instances" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">3. Creating endpoints</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='migrateDMS/create_endpoints.png')}}" alt="create endpoints"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">4. Creating database migration task</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='migrateDMS/database_migration_task.png')}}"
+                    alt="create migration task" class="center" width="1000" height="400">
+            </p>
+        </div>
+        <div class="carousel-item">
+            <h5 style="text-align:center;">5. Running migration task</h5>
+            <p style="text-align:center;">
+                <img src="{{url_for('static', filename='migrateDMS/migration_result.png')}}" alt="run migration task"
+                    class="center" width="1000" height="400">
+            </p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+{% endblock %}
