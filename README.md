@@ -27,7 +27,7 @@ List the ready features here:
 - Createing view to show data pipeline in glue and show results in athena,
 - Creating view to show dashboard in athena and quicksight,
 - Creating view to show database migration with schema conversion tool,
-- Creating view to show datamase migration with database migration services
+- Creating view to show database migration with database migration services
 
 
 ## Screenshots
