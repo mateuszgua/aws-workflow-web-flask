@@ -1,6 +1,6 @@
 # AWS SERVICES WORKFLOW
 > This application shows images with projects on aws services. 
-> Live demo [_here_](http://mateuszgua.pythonanywhere.com/).
+> Live demo 👉 [_here_](http://mateuszgua.pythonanywhere.com/).
 
 
 ## Table of Contents
@@ -45,4 +45,4 @@ Project is: in_progress
 
 
 ## Contact
-Created by [@DevGua]() - feel free to contact me!
+Created by [@DevGua](https://devgua-portfolio.web.app/) - feel free to contact me!
